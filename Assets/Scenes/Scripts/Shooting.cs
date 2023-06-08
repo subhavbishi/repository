@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public float bulletSpeed = 5f;
+    public float bulletSpeed = 100f;
     public Rigidbody bullet;
     public GameObject bulletpoint;
+    public GameObject Cam;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class Shooting : MonoBehaviour
            Rigidbody rb;
            rb = Instantiate(bullet,bulletpoint.transform.position,bulletpoint.transform.rotation);
           
-           Vector3 forward = transform.TransformDirection(Vector3.forward);
+           Vector3 forward = Cam.transform.TransformDirection(Vector3.forward);
            rb.velocity = forward*bulletSpeed; 
         }
     }
