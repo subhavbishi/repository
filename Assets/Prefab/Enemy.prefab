@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2335271377005532030}
   m_Layer: 0
   m_Name: Point1
-  m_TagString: Untagged
+  m_TagString: point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 2335271377122074280}
   m_Layer: 0
   m_Name: Point2
-  m_TagString: Untagged
+  m_TagString: point
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

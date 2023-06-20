@@ -11,7 +11,11 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
 
     void OnTriggerEnter(Collider other){
-        speed = (-1)*speed;
+         if(other.CompareTag("point")){
+            speed = -1*speed;
+
+         }
+        
     }
 
     void Start()
